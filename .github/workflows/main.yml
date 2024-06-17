@@ -1,0 +1,44 @@
+name: Build and Publish Release
+
+on:
+  push:
+    tags:
+      - 'v*'  # Desencadenar en tags que empiecen con 'v'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12.4'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build executable
+        run: |
+          python -m pip install pyinstaller
+          pyinstaller autoclicker.spec
+
+      - name: Print Workspace Contents
+        run: |
+          ls -R $GITHUB_WORKSPACE
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          files: dist/*
+          draft: false
+          prerelease: false
