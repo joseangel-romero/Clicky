@@ -57,7 +57,7 @@ AutoClicker is a Python-based application that automates mouse clicks on your de
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/joseangel-romero/Clicky-AutoClicker.git
+   git clone https://github.com/joseangel-romero/Clicky.git
    cd AutoClicker
   
 2. **Install dependencies:**
