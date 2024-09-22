@@ -4,7 +4,7 @@
 
 ## 🌟 Introduction
 
-Welcome to **AutoClicker**, a versatile and user-friendly Python-based application designed to automate mouse clicks on your desktop. Whether you're gaming, performing repetitive tasks, or testing software, AutoClicker streamlines your workflow by handling mouse clicks with precision and flexibility.
+Welcome to **Clicky**, a versatile and user-friendly Python-based application designed to automate mouse clicks on your desktop. Whether you're gaming, performing repetitive tasks, or testing software, AutoClicker streamlines your workflow by handling mouse clicks with precision and flexibility.
 
 ## 📝 Features
 
