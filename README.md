@@ -1,4 +1,4 @@
-# 🖱️ AutoClicker
+# 🖱️ Clicky AutoClicker
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/joseangel-romero/AutoClicker?style=plastic) ![GitHub all releases](https://img.shields.io/github/downloads/joseangel-romero/AutoClicker/total?style=plastic) ![GitHub](https://img.shields.io/github/license/joseangel-romero/AutoClicker?style=plastic)
 
